@@ -1,0 +1,67 @@
+:root {
+  --paperwhite: #fcfcf4;
+}
+
+html {
+  background: var(--paperwhite);
+}
+
+#ink-container {
+  position: relative;
+}
+
+#ink-background {
+  position: absolute;
+  top: 0; left: 0; width: 100%; bottom: 1rem;
+  background-size: cover;
+  background-position: center;
+}
+
+#ink-background::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; bottom: 0;
+  background: linear-gradient(0deg, black, rgba(0, 0, 0, 0));
+}
+
+#ink-outline {
+  position: relative;
+  width: 100%;
+}
+
+#ink-inline {
+  position: absolute;
+  top: -1rem; left: 0; width: 100%; height: 100%;
+}
+
+#ink-outline-path {
+  -webkit-filter: drop-shadow( 0px -3px 20px rgba(0, 0, 0, .9));
+  filter: drop-shadow( 0px -3px 20px rgba(0, 0, 0, .9));
+  fill: var(--paperwhite);
+}
+
+#ink-inline-path {
+  fill: rgba(0, 0, 0, .1);
+  -webkit-filter: drop-shadow( 0px -3px 20px rgba(0, 0, 0, .9));
+  filter: drop-shadow( 0px -3px 20px rgba(0, 0, 0, .9));
+}
+
+#pen-container {
+  position: relative;
+}
+
+#pen {
+  width: 30%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-60%);
+  top: -4rem;
+  bottom: 0;
+  filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, .2));
+}
+
+#pen-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; bottom: 4rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--paperwhite));
+}

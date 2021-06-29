@@ -1,0 +1,26 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preload"
+          href="{% static 'css/bulma.min.css' %}"
+          as="style">
+    <link href="{% static 'css/bulma.min.css' %}" rel="stylesheet">
+    {% block extrahead %}{% endblock %}
+  </head>
+  <body>
+    <main>
+      {% block main %}{% endblock %}
+    </main>
+
+    <script src="{% static 'js/anime.min.js' %}"></script>
+    {% block extrabody %}{% endblock %}
+  </body>
+</html>

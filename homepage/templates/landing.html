@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block extrahead %}
+<link rel="preload"
+      href="{% static 'css/landing.css' %}"
+      as="style">
+<link href="{% static 'css/landing.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block main %}
+<div class="container">
+  {% include 'ink.html' %}
+  {% include 'pen.html' %}
+</div>
+<div style="height: 12rem; background: black"></div>
+{% endblock %}

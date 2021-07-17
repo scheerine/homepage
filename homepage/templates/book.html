@@ -1,0 +1,44 @@
+{% load static %}
+
+{% block extrahead %}
+<link rel="preload"
+      href="{% static 'css/book.min.css' %}"
+      as="style">
+<link href="{% static 'css/book.min.css' %}" rel="stylesheet">
+{% endblock %}
+
+<section class="app" data-current-media="book">
+    <article class="media-container">
+        <div class="book-wrapper">
+            <div class="book">
+                <div class="book__front">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/511bwTd4SQL.jpg" alt="cover">
+                </div>
+                <div class="book__paper"></div>
+                <div class="book__back"></div>
+            </div>
+            <div class="book-shadow"></div>
+        </div>
+        <div class="book-wrapper">
+            <div class="book">
+                <div class="book__front">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51jHdrN4KkL.jpg" alt="cover">
+                </div>
+                <div class="book__paper"></div>
+                <div class="book__back"></div>
+            </div>
+            <div class="book-shadow"></div>
+        </div>
+        <div class="book-wrapper">
+            <div class="book">
+                <div class="book__front">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71C6jK-yhyL.jpg" alt="cover">
+                </div>
+                <div class="book__paper"></div>
+                <div class="book__back"></div>
+            </div>
+            <div class="book-shadow"></div>
+        </div>
+    </article>
+</section>
+

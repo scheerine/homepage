@@ -4,15 +4,17 @@
 
 {% block extrahead %}
 <link rel="preload"
-      href="{% static 'css/landing.css' %}"
+      href="{% static 'css/landing.min.css' %}"
       as="style">
-<link href="{% static 'css/landing.css' %}" rel="stylesheet">
+<link href="{% static 'css/landing.min.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block main %}
 <div class="container">
+  {% include 'nav.html' %}
   {% include 'ink.html' %}
-  {% include 'pen.html' %}
+  {% include 'book.html' %}
 </div>
-<div style="height: 12rem; background: black"></div>
+
+<div style="height: 12rem;"></div>
 {% endblock %}

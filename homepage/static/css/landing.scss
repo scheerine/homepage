@@ -6,6 +6,64 @@ html {
   background: var(--paperwhite);
 }
 
+html * {
+  font-family: 'Dancing Script', cursive !important;
+}
+
+#top-nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  z-index: 1337;
+}
+
+#header-signature {
+  position: relative;
+}
+
+#profil {
+  width: 16rem;
+}
+
+#logo {
+  width: 12rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-filter: drop-shadow( 0px -3px 20px rgba(0, 0, 0, .9));
+  filter: drop-shadow( 0px -3px 20px rgba(0, 0, 0, .9));
+}
+
+img.round {
+  border-radius: 50%;
+}
+
+#top-nav-links .subtitle {
+  color: white;
+}
+
+#top-nav-links a {
+  position: relative;
+  color: white;
+}
+
+#top-nav-links a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid var(--paperwhite);
+  transition: 0.4s;
+}
+
+#top-nav-links a:hover:after {
+  width: 100%;
+}
+
 #ink-container {
   position: relative;
 }
@@ -15,6 +73,7 @@ html {
   top: 0; left: 0; width: 100%; bottom: 1rem;
   background-size: cover;
   background-position: center;
+  filter: saturate(0);
 }
 
 #ink-background::after {

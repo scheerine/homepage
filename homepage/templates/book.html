@@ -7,12 +7,18 @@
 <link href="{% static 'css/book.min.css' %}" rel="stylesheet">
 {% endblock %}
 
-<section class="app" data-current-media="book">
-    <article class="media-container">
+<section id="book-app" data-current-media="book">
+    {% include 'text.html' %}
+
+    <div class="hero has-text-centered px-6">
+        <h1 class="title pb-6 is-size-1-tablet">Meine "Match of Survival" Reihe</h1>
+    </div>
+
+    <article class="media-container pt-3">
         <div class="book-wrapper">
             <div class="book">
                 <div class="book__front">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/511bwTd4SQL.jpg" alt="cover">
+                    <img src="{% static 'img/mos1.webp' %}" alt="cover">
                 </div>
                 <div class="book__paper"></div>
                 <div class="book__back"></div>
@@ -22,7 +28,7 @@
         <div class="book-wrapper">
             <div class="book">
                 <div class="book__front">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/51jHdrN4KkL.jpg" alt="cover">
+                    <img src="{% static 'img/mos2.webp' %}" alt="cover">
                 </div>
                 <div class="book__paper"></div>
                 <div class="book__back"></div>
@@ -32,7 +38,7 @@
         <div class="book-wrapper">
             <div class="book">
                 <div class="book__front">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/71C6jK-yhyL.jpg" alt="cover">
+                    <img src="{% static 'img/mos3.webp' %}" alt="cover">
                 </div>
                 <div class="book__paper"></div>
                 <div class="book__back"></div>

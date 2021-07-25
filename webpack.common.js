@@ -8,6 +8,12 @@ const sassConfig = {
       path.resolve(__dirname, 'homepage/static/css/landing.scss'),
     'book':
       path.resolve(__dirname, 'homepage/static/css/book.scss'),
+    'ink':
+      path.resolve(__dirname, 'homepage/static/css/ink.scss'),
+    'nav':
+      path.resolve(__dirname, 'homepage/static/css/nav.scss'),
+    'text':
+      path.resolve(__dirname, 'homepage/static/css/text.scss'),
   },
 
   output: {
@@ -33,6 +39,7 @@ const sassConfig = {
             },
           },
           'sass-loader',
+          'postcss-loader',
         ],
       },
     ],

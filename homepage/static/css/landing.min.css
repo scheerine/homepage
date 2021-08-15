@@ -1,3 +1,3 @@
-:root{--paperwhite: #fcfcf4}html{background:var(--paperwhite)}html *{font-family:"Dancing Script",cursive}html .typewriter{font-family:"STIX Two Math",serif}@media(max-width: 1215px){.is-hidden-until-widescreen{display:none}}@media(min-width: 1215px){.is-hidden-from-widescreen{display:none}}
+:root{--paperwhite: #fcfcf4}html{background:var(--paperwhite)}html *{font-family:"STIX Two Math",serif}html .calligraphy{font-family:"Dancing Script",cursive}@media(max-width: 1215px){.is-hidden-until-widescreen{display:none}}@media(min-width: 1215px){.is-hidden-from-widescreen{display:none}}
 
 /*# sourceMappingURL=landing.min.css.map*/

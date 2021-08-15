@@ -11,10 +11,13 @@
     {% include 'text.html' %}
 
     <div class="hero has-text-centered px-6">
-        <h1 class="title pb-6 is-size-1-tablet">Meine "Match of Survival" Reihe</h1>
+        <h1 class="title calligraphy pb-6 is-size-1-tablet">Meine "Match of Survival" Reihe</h1>
+        <p class="typewriter subtitle pb-6 has-text-justified">
+            Ivy Moore ist ein zu Beginn junges Mädchen aus England. Durch ihre Familie und deren Traditionen ist sie mit der Welt der Magie und ihren Wesen bereits vertraut, doch sie merkt sehr schnell, dass die Ansichten ihrer Familie falsch sind und sie beginnt, sich von ihrer Familie und der Organisation SCIO zu entfernen und stattdessen ihren eigenen Weg zu gehen. Dieser führt sie auf Umwegen nach Deutschland und schließlich zu den Para Humanitas, welche ihr eine neue Sichtweise auf die Magie geben und Ivy lehren, sie nicht zu fürchten. Doch sehr schnell drängen Geheimnisse an die Oberfläche und Ivys Leben gerät aus den Fugen...
+        </p>
     </div>
 
-    <article class="media-container pt-3">
+    <article class="media-container pt-6">
         <div class="book-wrapper">
             <div class="book">
                 <div class="book__front">
@@ -46,5 +49,13 @@
             <div class="book-shadow"></div>
         </div>
     </article>
+
+    <div class="hero has-text-centered px-6" style="padding-top: 6rem;">
+        <p class="title typewriter pt-63">Jetzt bei <a target="_blank" class="typewriter" href="https://www.thalia.de/shop/home/artikeldetails/ID150293688.html">Thalia</a>, <a target="_blank" class="typewriter" href="https://www.hugendubel.de/de/ebook_epub/victoria_scheer-match_of_survival_koenigin_der_hoffnung-39904752-produkt-details.html?searchId=1516792578">Hugendubel</a> und <a target="_blank" class="typewriter" href="https://www.amazon.de/Match-Survival-Hoffnung-Victoria-Scheer-ebook/dp/B08NPB3N3S/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=38895ZTYDF5HV&dchild=1&keywords=victoria+scheer&qid=1606726690&sprefix=victoria+scheer%2Caps%2C215&sr=8-2">Amazon</a></p>
+    </div>
 </section>
 
+{% block extrabody %}
+<link rel="prefetch" href="{% static 'js/book.min.js' %}">
+<script defer src="{% static 'js/book.min.js' %}"></script>
+{% endblock %}

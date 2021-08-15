@@ -1,0 +1,127 @@
+#top-nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  z-index: 1337;
+
+  #header-signature {
+    position: relative;
+  }
+
+  #logo {
+    width: 12rem;
+    filter: drop-shadow( 0px -3px 20px rgba(0, 0, 0, .9));
+    animation: 2s ease forwards nav-slide-from-top;
+  }
+
+  @keyframes nav-slide-from-top {
+    0% {
+      transform: translateY(-4rem);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  #top-nav-links .subtitle {
+    color: white;
+    animation: 2s ease forwards nav-slide-from-bottom;
+  }
+
+  @keyframes nav-slide-from-bottom {
+    0% {
+      transform: translateY(4rem);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  #top-nav-links a {
+    position: relative;
+    color: white;
+  }
+
+  #top-nav-links a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid var(--paperwhite);
+    transition: 0.4s;
+  }
+
+  #top-nav-links a:hover:after {
+    width: 100%;
+  }
+}
+
+
+#ink-container {
+  position: relative;
+
+  #ink-background, #ink-foreground {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 1rem;
+  }
+
+  #ink-background {
+    background-position: center;
+    filter: saturate(0);
+    animation-duration: 10s;
+    animation-name: ink-bg-zoomin;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes ink-bg-zoomin {
+    from {
+      background-size: 100% 100%;
+    }
+    to {
+      background-size: 120% 120%;
+    }
+  }
+
+  #ink-foreground {
+    background-size: auto 80%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  #ink-outline {
+    position: relative;
+    width: 100%;
+  }
+
+  #ink-inline {
+    position: absolute;
+    top: -1rem; left: 0; width: 100%; height: 100%;
+  }
+
+  #ink-outline-path {
+    filter: drop-shadow( 0px -3px 20px rgba(0, 0, 0, .9));
+    fill: var(--paperwhite);
+  }
+
+  #ink-inline-path {
+    fill: transparent;
+  }
+}
+
+#pen {
+  width: 100%;
+  height: 8rem;
+}
+
+#open-book {
+
+}

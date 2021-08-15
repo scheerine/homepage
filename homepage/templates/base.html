@@ -29,6 +29,8 @@
       {% block main %}{% endblock %}
     </main>
 
+    <link rel="prefetch" href="{% static 'js/hook.min.js' %}">
+    <script defer src="{% static 'js/hook.min.js' %}"></script>
     {% block extrabody %}{% endblock %}
   </body>
 </html>

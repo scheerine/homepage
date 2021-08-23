@@ -4,6 +4,12 @@
 
 html {
   background: var(--paperwhite);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.bg-paperwhite {
+  background: var(--paperwhite);
 }
 
 html {

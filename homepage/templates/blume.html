@@ -1,0 +1,101 @@
+{% load static %}
+
+{% block extrahead %}
+<link rel="preload"
+      href="{% static 'css/blume.min.css' %}"
+      as="style">
+<link href="{% static 'css/blume.min.css' %}" rel="stylesheet">
+{% endblock %}
+
+<style>
+#blume {
+  height: 100vh;
+  width: 100%;
+  background-image: url({% static 'img/blume.webp' %});
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#blume-treppe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url({% static 'img/blume-treppe.webp' %});
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  #blume {
+    height: 50vh;
+  }
+  #blume-treppe {
+    height: 50vh;
+  }
+}
+
+#blume-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url({% static 'img/blume-background.webp' %});
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+  overflow: hidden;
+}
+
+#blume-section {
+  position: relative;
+}
+</style>
+
+<section id="blume-section">
+  <div id="blume-background"></div>
+  <div id="blume-treppe"></div>
+  <div id="blume"></div>
+  <div class="columns is-centered">
+    <div class="column is-6">
+      <div class="hero has-text-centered">
+        <h1 class="title calligraphy pt-6 px-6 has-text-white">
+          Millionen Neuer Lügen
+        </h1>
+        <h5 class="subtitle typewriter pt-2 px-6 has-text-white">
+          “Hör mir nun gut zu.” Lady Winter sprach ruhig aber bestimmt. “Deine Mutter war wie ich, kleine Eve. Leider ist sie zu früh gestorben, um dir alles selbst erklären zu können. Sie hat mir ein Geheimnis anvertraut, welches ich nun an dich weiterreiche.”Was würdest du tun, wenn von einem Tag auf den anderen deine Welt auf den Kopf gestellt wird? Was, wenn du eine ganze Welt aufgeben müsstest, nur um denjenigen zu retten, der dir am meisten bedeutet? Was, wenn hinter jedem Satz eine Lüge steckt? Und was, wenn alles was du geglaubt hast zu kennen, ein Geheimnis birgt?Eve Cort ist ein junges Mädchen im frühen siebzehnten Jahrhundert, nur fasziniert von der Musik. Doch eines Tages ändert sich ihr ganzes Leben. Geheimnisse kommen ans Licht und bedrohen jene, die Eve am nächsten stehen. Bei dem Versuch diese zu retten, wird sie in eine Welt gerissen, in der Magie kein Fremdwort ist.
+        </h5>
+        <p class="title typewriter has-text-white pt-6">Jetzt verfügbar auf <a target="_blank" class="typewriter" href="https://www.thalia.de/shop/home/artikeldetails/ID150293688.html">Thalia</a>, <a target="_blank" class="typewriter" href="https://www.hugendubel.de/de/ebook_epub/victoria_scheer-match_of_survival_koenigin_der_hoffnung-39904752-produkt-details.html?searchId=1516792578">Hugendubel</a> und <a target="_blank" class="typewriter" href="https://www.amazon.de/Match-Survival-Hoffnung-Victoria-Scheer-ebook/dp/B08NPB3N3S/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=38895ZTYDF5HV&dchild=1&keywords=victoria+scheer&qid=1606726690&sprefix=victoria+scheer%2Caps%2C215&sr=8-2">Amazon</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% block extrabody %}
+<link rel="prefetch" href="{% static 'js/blume.min.js' %}">
+<script defer src="{% static 'js/blume.min.js' %}"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+    const container = document.getElementById('blume-section')
+    const bg = document.getElementById('blume-background')
+    const treppe = document.getElementById('blume-treppe')
+    const blume = document.getElementById('blume')
+    new ParallaxHook(
+        container,
+        () => {},
+        (progress) => {
+            bg.style.opacity = `${Math.min(1, progress.value * 3)}`
+            treppe.style.transform = `translateY(${-(progress.value * 30)}rem) rotate(${progress.value * 90}deg) scale(${1 + 1.5 * progress.value})`
+            blume.style.transform = `translateY(${-(progress.value * 30)}rem) scale(${1 + 1 * progress.value})`
+        },
+        () => {}
+    ).attach()
+})
+</script>
+{% endblock %}

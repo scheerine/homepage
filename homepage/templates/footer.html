@@ -1,4 +1,17 @@
-<section id="footer" class="px-3">
+{% load static %}
+
+{% block extrahead %}
+<link rel="preload"
+      href="{% static 'css/footer.min.css' %}"
+      as="style">
+<link href="{% static 'css/footer.min.css' %}" rel="stylesheet">
+{% endblock %}
+
+<div class="paperedge-bottom"
+     style="--background-image: url({% static 'img/paper-border.webp' %});">
+</div>
+
+<section id="footer" class="px-6 pt-6">
   <div class="container">
     <div class="columns is-multiline is-centered">
       <div class="column is-4 has-text-centered">
@@ -6,8 +19,9 @@
         <p>Clara-Viebig-Straße 9</p>
         <p>01159 Dresden</p>
         <p>kontakt@victoria-scheer.de</p>
-        <hr>
-        <p>Made with ❤️ by <a rel="noreferrer" href="https://philippmatth.es" target="_blank">Philipp Matthes</a></p>
+        <p class="pt-3">
+          <small>Made with ❤️ by <a rel="noreferrer" href="https://philippmatth.es" target="_blank">Philipp Matthes</a></small>
+        </p>
       </div>
     </div>
   </div>

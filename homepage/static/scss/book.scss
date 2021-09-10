@@ -25,6 +25,10 @@
   .book-wrapper {
     &:hover .book {
       transform: rotateX(5deg) rotateY(-50deg) translateY(-0.25rem);
+
+      &__front {
+        filter: saturate(1);
+      }
     }
 
     &:hover .book-shadow {
@@ -55,6 +59,8 @@
     &__front {
       border-radius: 3px;
       overflow: hidden;
+      filter: saturate(0);
+      transition: filter 1s ease;
       transform: translateZ(calc(var(--thickness)));
 
       img {
@@ -102,3 +108,22 @@
   }
 }
 
+#open-book-shadow {
+  width: 45%;
+  position: absolute;
+  bottom: -7vw;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: contain;
+  z-index: 1337;
+}
+
+#open-book {
+  width: 45%;
+  position: absolute;
+  bottom: -5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: contain;
+  z-index: 1337;
+}

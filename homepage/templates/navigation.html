@@ -1,0 +1,52 @@
+{% load static %}
+
+{% block extrahead %}
+<link rel="preload"
+      href="{% static 'css/navigation.min.css' %}"
+      as="style">
+<link href="{% static 'css/navigation.min.css' %}" rel="stylesheet">
+{% endblock %}
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="paperedge-top"
+       style="--background-image: url({% static 'img/paper-border.webp' %})";>
+  </div>
+
+  <div class="container px-6">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img id="nav-logo" alt="logo" src="{% static 'img/logo-black.webp' %}">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+      </div>
+
+      <div class="navbar-end">
+        <a class="navbar-item is-size-4">
+          <strong>Blog</strong>
+        </a>
+
+        <a class="navbar-item is-size-4">
+          <strong>Match of Survival</strong>
+        </a>
+
+        <a class="navbar-item is-size-4">
+          <strong>Millionen neuer Lügen</strong>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+{% block extrabody %}
+<link rel="prefetch" href="{% static 'js/navigation.min.js' %}">
+<script defer src="{% static 'js/navigation.min.js' %}"></script>
+{% endblock %}

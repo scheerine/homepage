@@ -11,11 +11,10 @@
 
 {% block main %}
 
-<div class="bg-paperwhite">
-  {% include 'ink.html' %}
-  {% include 'book.html' %}
-</div>
+{% include 'ink.html' %}
+{% include 'navigation.html' %}
+{% include 'book.html' %}
 {% include 'blume.html' %}
+{% include 'footer.html' %}
 
-<div style="height: 12rem;"></div>
 {% endblock %}

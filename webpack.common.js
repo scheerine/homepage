@@ -4,6 +4,8 @@ const CompressionPlugin = require("compression-webpack-plugin");
 
 const typeScriptConfig = {
   entry: {
+    'navigation': path.resolve(__dirname, 'homepage/static/ts/navigation.ts'),
+    'blume': path.resolve(__dirname, 'homepage/static/ts/blume.ts'),
     'hook': path.resolve(__dirname, 'homepage/static/ts/hook.ts'),
     'book': path.resolve(__dirname, 'homepage/static/ts/book.ts'),
   },
@@ -39,6 +41,12 @@ const typeScriptConfig = {
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const sassConfig = {
   entry: {
+    'navigation':
+      path.resolve(__dirname, 'homepage/static/scss/navigation.scss'),
+    'footer':
+      path.resolve(__dirname, 'homepage/static/scss/footer.scss'),
+    'blume':
+      path.resolve(__dirname, 'homepage/static/scss/blume.scss'),
     'landing':
       path.resolve(__dirname, 'homepage/static/scss/landing.scss'),
     'book':

@@ -6,20 +6,28 @@ html {
   background: var(--paperwhite);
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  a {
+    color: grey;
+    transition: 0.4s;
+  }
+
+  a:hover {
+    color: darkgrey !important;
+  }
+
+  * {
+    font-family: 'Patrick Hand', cursive;
+  }
+
+  .calligraphy {
+    font-family: 'Bad Script', cursive;
+  }
 }
 
 .bg-paperwhite {
   background: var(--paperwhite);
-}
-
-html {
-  * {
-    font-family: 'STIX Two Math', serif;
-  }
-
-  .calligraphy {
-    font-family: 'Dancing Script', cursive;
-  }
 }
 
 @media (max-width: 1215px) {

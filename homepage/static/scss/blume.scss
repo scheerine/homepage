@@ -1,0 +1,57 @@
+#blume {
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+#blume-treppe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  #blume {
+    height: 50vh;
+  }
+  #blume-treppe {
+    height: 50vh;
+  }
+}
+
+#blume-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  z-index: -2;
+}
+
+#blume-section {
+  position: relative;
+}
+
+#blume-section:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: -2;
+  background: linear-gradient(180deg, var(--paperwhite), rgba(0, 0, 0, 0));
+  overflow: hidden;
+}

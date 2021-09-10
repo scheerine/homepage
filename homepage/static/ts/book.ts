@@ -1,3 +1,4 @@
+declare var anime: any;
 declare var ParallaxHook: any
 
 
@@ -8,8 +9,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         container,
         () => {},
         (progress: any) => {
-            container.style.opacity = `${Math.min(1, progress.value * 3)}`;
-            container.style.transform = `translateY(${10 - (progress.value * 20)}rem)`
+            anime({
+                targets: container,
+                opacity: Math.min(1, progress.value * 3),
+                translateY: 10 - (progress.value * 20),
+                duration: 200,
+            })
         },
         () => {}
     ).attach()

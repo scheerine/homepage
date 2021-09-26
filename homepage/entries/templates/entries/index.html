@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% load markdown %}
+
+{% block extrameta %}
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ entry.title }}" />
+<meta name="twitter:description" content="{{ entry.description }}" />
+{% if entry.thumbnail %}
+<meta name="twitter:image" content="{{ entry.thumbnail }}" />
+{% endif %}
+{% endblock %}
+
+{% block title %}{{entry.title}}{% endblock %}
+{% block description %}{{entry.description}}{% endblock %}
+
+{% if entry.author %}{% block author %}{{entry.author}}{% endblock %}{% endif %}
+{% if entry.tags %}{% block tags %}{{entry.tags}}{% endblock %}{% endif %}
+
+{% block header %}
+{% if entry.thumbnail %}
+  <img class="markdown thumbnail"
+      alt="thumbnail"
+      src="{{ entry.thumbnail }}">
+{% endif %}
+<h1>{{ entry.title }}</h1>
+<p class="lead text-light">{{ entry.description }}</p>
+<p class="text-light">Published by <strong>{{ entry.authors }}</strong> {{ entry.created|timesince }} ago</p>
+{% endblock %}
+
+{% block main %}
+
+<div class="container pt-5 bg-color-scheme-responsive">
+{% if entry %}
+  <div class="markdown">
+    {{ entry.markdown|markdown }}
+  </div>
+{% endif %}
+</div>
+
+<div class="container">
+
+<p>
+  {% for tag in entry.tags_list %}
+    <span class="badge badge-pill badge-secondary">
+      {{ tag }}
+    </span>
+  {% endfor %}
+</p>
+
+<hr>
+
+{% if entries %}
+  <h5>More Blog Entries for You</h5>
+  <div class="row">
+    {% for entry in entries %}
+    <div class="col-sm-6">
+      {% include 'entries/entry-card.html' %}
+    </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+</div>
+{% endblock %}

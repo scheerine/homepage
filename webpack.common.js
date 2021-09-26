@@ -43,6 +43,8 @@ const sassConfig = {
   entry: {
     'navigation':
       path.resolve(__dirname, 'homepage/static/scss/navigation.scss'),
+    'blog':
+      path.resolve(__dirname, 'homepage/static/scss/blog.scss'),
     'footer':
       path.resolve(__dirname, 'homepage/static/scss/footer.scss'),
     'blume':

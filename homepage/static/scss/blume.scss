@@ -9,6 +9,7 @@
 }
 
 #blume-treppe {
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -42,6 +43,7 @@
 
 #blume-section {
   position: relative;
+  overflow: hidden;
 }
 
 #blume-section:after {

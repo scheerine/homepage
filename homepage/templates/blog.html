@@ -1,0 +1,49 @@
+{% load static %}
+
+{% block extrahead %}
+<link rel="preload"
+      href="{% static 'css/blog.min.css' %}"
+      as="style">
+<link href="{% static 'css/blog.min.css' %}" rel="stylesheet">
+{% endblock %}
+
+<div class="paperedge-bottom"
+     style="--background-image: url({% static 'img/paper-border.webp' %});">
+</div>
+
+{% for entry in entries %}
+<!-- Image -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      {% if entry.thumbnail %}
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <figure class="image is-16by9 is-round">
+              <img  alt="thumbnail"
+                    src="{% url 'entries:index' entry.slug %}{{ entry.thumbnail }}">
+            </figure>
+          </div>
+        </div>
+      {% endif %}
+
+      <section class="section">
+        <div class="columns">
+          <div class="column is-8 is-offset-2">
+            <div class="content is-medium">
+              <h2 class="subtitle is-4">Von <strong>{{ entry.authors }}</h2>
+              <a href="{% url 'entries:index' entry.slug %}">
+              <h1 class="title">{{ entry.title }}</h1>
+              </a>
+              <p>{{ entry.description }}</p>
+              <span class="badge badge-pill bg-color-scheme-responsive">
+                Ungefähr {{ entry.minutes_to_read }} Minuten Lesezeit
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+{% endfor %}

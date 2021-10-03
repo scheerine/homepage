@@ -2,20 +2,9 @@
 
 {% load markdown %}
 
-{% block extrameta %}
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="{{ entry.title }}" />
-<meta name="twitter:description" content="{{ entry.description }}" />
-{% if entry.thumbnail %}
-<meta name="twitter:image" content="{{ entry.thumbnail }}" />
-{% endif %}
-{% endblock %}
-
 {% block title %}{{entry.title}}{% endblock %}
 {% block description %}{{entry.description}}{% endblock %}
-
 {% if entry.author %}{% block author %}{{entry.author}}{% endblock %}{% endif %}
-{% if entry.tags %}{% block tags %}{{entry.tags}}{% endblock %}{% endif %}
 
 {% block header %}
 {% if entry.thumbnail %}
@@ -30,36 +19,95 @@
 
 {% block main %}
 
-<div class="container pt-5 bg-color-scheme-responsive">
+<style>
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.markdown > p {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+}
+
+.markdown > h3 {
+  margin-top: 2rem;
+}
+
+.markdown img {
+  max-width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.markdown img {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.01);
+  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.markdown img:hover {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.15), 0 15px 12px rgba(0,0,0,0.05);
+}
+
+.reading-overlay {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  height: 25vh;
+  width: 100%;
+  background: linear-gradient(0deg, var(--paperwhite), rgba(0, 0, 0, 0));
+}
+</style>
+
+{% include 'navigation.html' %}
+
+<div class="pt-6"></div>
+
+{% include 'entries/entry-feature-card.html' %}
+
+<div class="container px-6" style="position: relative">
 {% if entry %}
-  <div class="markdown">
-    {{ entry.markdown|markdown }}
+  <div class="columns is-centered">
+    <div class="column is-10">
+      <div class="markdown justify">
+        {{ entry.markdown|markdown }}
+      </div>
+      <div class="reading-overlay"></div>
+    </div>
   </div>
 {% endif %}
 </div>
 
-<div class="container">
-
-<p>
-  {% for tag in entry.tags_list %}
-    <span class="badge badge-pill badge-secondary">
-      {{ tag }}
-    </span>
-  {% endfor %}
-</p>
+<div class="container has-text-centered pt-6 px-6">
+  <p>
+    {% for tag in entry.tags_list %}
+      <span class="tag is-dark">
+        {{ tag }}
+      </span>
+    {% endfor %}
+  </p>
+</div>
 
 <hr>
 
+
 {% if entries %}
-  <h5>More Blog Entries for You</h5>
-  <div class="row">
-    {% for entry in entries %}
-    <div class="col-sm-6">
+  <div class="container">
+    <h1 class="calligraphy has-text-centered pb-6">Das könnte Dich auch interessieren</h1>
+    <div class="columns is-multiline is-centered">
+      {% for entry in entries %}
       {% include 'entries/entry-card.html' %}
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
 {% endif %}
 
-</div>
+{% include 'book.html' %}
+{% include 'footer.html' %}
+
 {% endblock %}

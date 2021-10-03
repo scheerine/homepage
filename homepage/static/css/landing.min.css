@@ -1,3 +1,1 @@
-:root{--paperwhite: #fcfcf4}html{background:var(--paperwhite);max-width:100vw;overflow-x:hidden;scroll-behavior:smooth}html a{color:gray;transition:.4s}html a:hover{color:#a9a9a9 !important}html *{font-family:"Patrick Hand",cursive}html .calligraphy{font-family:"Bad Script",cursive}.bg-paperwhite{background:var(--paperwhite)}@media(max-width: 1215px){.is-hidden-until-widescreen{display:none}}@media(min-width: 1215px){.is-hidden-from-widescreen{display:none}}
 
-/*# sourceMappingURL=landing.min.css.map*/

@@ -1,0 +1,48 @@
+:root {
+  --paperwhite: #fcfcf4;
+}
+
+html {
+  background: var(--paperwhite);
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  a {
+    color: grey;
+    transition: 0.4s;
+  }
+
+  a:hover {
+    color: darkgrey !important;
+  }
+
+  * {
+    font-family: 'Patrick Hand', cursive;
+  }
+
+  .calligraphy {
+    font-family: 'Bad Script', cursive;
+  }
+}
+
+.bg-paperwhite {
+  background: var(--paperwhite);
+}
+
+@media (max-width: 1215px) {
+  .is-hidden-until-widescreen {
+    display: none;
+  }
+}
+
+@media (min-width: 1215px) {
+  .is-hidden-from-widescreen {
+    display: none;
+  }
+}
+
+img.thumbnail {
+  border-radius: 2rem;
+  filter: drop-shadow( 5px 10px 5px rgba(0, 0, 0, .05));
+}

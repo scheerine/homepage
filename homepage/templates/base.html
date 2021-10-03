@@ -9,10 +9,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta name="author"
+          content="{% block author %}Victoria Scheer{% endblock %}">
+    <meta name="description" content="{% block description %}Biology student and writer.{% endblock %}">
+    <title>{% block title %}Victoria Scheer{% endblock %}</title>
+
     <link rel="preload"
           href="{% static 'css/bulma.min.css' %}"
           as="style">
     <link href="{% static 'css/bulma.min.css' %}" rel="stylesheet">
+
+    <link rel="preload"
+          href="{% static 'css/base.min.css' %}"
+          as="style">
+    <link href="{% static 'css/base.min.css' %}" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

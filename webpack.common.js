@@ -41,6 +41,8 @@ const typeScriptConfig = {
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const sassConfig = {
   entry: {
+    'base':
+      path.resolve(__dirname, 'homepage/static/scss/base.scss'),
     'navigation':
       path.resolve(__dirname, 'homepage/static/scss/navigation.scss'),
     'blog':

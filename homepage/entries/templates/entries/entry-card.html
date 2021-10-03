@@ -1,38 +1,11 @@
-{% load highlight %}
 
-<div class="card mt-4 bg-color-scheme-responsive">
-<a href="{% url 'entries:index' entry.slug %}" class="text-color-scheme-responsive">
-  {% if entry.thumbnail %}
-    <img class="card-img-top"
-        alt="thumbnail"
-        src="{% url 'entries:index' entry.slug %}{{ entry.thumbnail }}">
-  {% endif %}
-  <div class="card-body">
-    <h3 class="card-title">
-      {% if request.GET.query %}
-        {{ entry.title|highlight:request.GET.query }}
-      {% else %}
-        {{ entry.title }}
-      {% endif %}
-    </h3>
-    <p class="card-text">
-      Published by <strong>{{ entry.authors }}</strong> {{ entry.created|timesince }} ago
-    </p>
-    <hr>
-    <p class="card-text">
-      {% if request.GET.query %}
-        {{ entry.description|highlight:request.GET.query }}
-      {% else %}
-        {{ entry.description }}
-      {% endif %}
-    </p>
-  </div>
-  <div class="card-footer">
-    <p class="card-text">
-      <span class="badge badge-pill bg-color-scheme-responsive">
-        ~ {{ entry.minutes_to_read }} Minutes Read
-      </span>
-    </p>
-  </div>
-</a>
+<div class="column is-6 pb-6 px-6">
+  <a href="{% url 'entries:index' entry.slug %}">
+    <div class="content is-medium">
+      <img alt="thumbnail" class="thumbnail"
+            src="{% url 'entries:index' entry.slug %}{{ entry.thumbnail }}">
+      <h1 class="title is-size-4 calligraphy">{{ entry.title }}</h1>
+      <p class="subtitle is-size-5">{{ entry.description }}</p>
+    </div>
+  </a>
 </div>

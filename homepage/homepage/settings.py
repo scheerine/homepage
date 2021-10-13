@@ -47,7 +47,11 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'django.middleware.gzip.GZipMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -76,6 +80,14 @@ TEMPLATES = [
         },
     },
 ]
+
+if not DEBUG:
+    TEMPLATES[0]['OPTIONS']['loaders'] = [
+        (
+            'django.template.loaders.cached.Loader',
+            TEMPLATES[0]['OPTIONS']['loaders']
+        ),
+    ]
 
 WSGI_APPLICATION = 'homepage.wsgi.application'
 
@@ -141,6 +153,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CACHE_CONTROL_MAX_AGE = 7 * 24 * 3600
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -167,6 +181,8 @@ CACHE_CONTROL_MAX_AGE = 7 * 24 * 3600
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [

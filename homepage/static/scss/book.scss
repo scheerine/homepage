@@ -24,7 +24,7 @@
 
   .book-wrapper {
     &:hover .book {
-      transform: rotateX(5deg) rotateY(-50deg) translateY(-0.25rem);
+      transform: rotateX(0deg) rotateY(-50deg) translateY(-0.25rem);
 
       &__front {
         filter: saturate(1);

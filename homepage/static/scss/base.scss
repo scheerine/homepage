@@ -46,3 +46,9 @@ img.thumbnail {
   border-radius: 2rem;
   filter: drop-shadow( 5px 10px 5px rgba(0, 0, 0, .05));
 }
+
+/* Fix overflow on iOS safari */
+.columns {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}

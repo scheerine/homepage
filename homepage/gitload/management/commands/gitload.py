@@ -56,9 +56,14 @@ class Command(BaseCommand):
             'thumbnail': entry_meta.get('thumbnail'),
         }
 
-        _, was_created = Entry.objects.update_or_create(
+        entry, was_created = Entry.objects.update_or_create(
             slug=entry_slug,
             defaults=defaults
+        )
+
+        print(
+            f'{"Created" if was_created else "Updated"} ' + \
+            f'blog entry {entry.title}'
         )
 
     def synchronize(self, repository):

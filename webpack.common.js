@@ -43,22 +43,18 @@ const sassConfig = {
   entry: {
     'base':
       path.resolve(__dirname, 'homepage/static/scss/base.scss'),
+    'fonts':
+      path.resolve(__dirname, 'homepage/static/scss/fonts.scss'),
     'navigation':
       path.resolve(__dirname, 'homepage/static/scss/navigation.scss'),
     'blog':
       path.resolve(__dirname, 'homepage/static/scss/blog.scss'),
-    'footer':
-      path.resolve(__dirname, 'homepage/static/scss/footer.scss'),
     'blume':
       path.resolve(__dirname, 'homepage/static/scss/blume.scss'),
-    'landing':
-      path.resolve(__dirname, 'homepage/static/scss/landing.scss'),
     'book':
       path.resolve(__dirname, 'homepage/static/scss/book.scss'),
     'ink':
       path.resolve(__dirname, 'homepage/static/scss/ink.scss'),
-    'text':
-      path.resolve(__dirname, 'homepage/static/scss/text.scss'),
   },
 
   output: {

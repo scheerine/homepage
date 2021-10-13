@@ -16,17 +16,17 @@
 </div>
 
 {% for entry in entries %}
-{% if forloop.first %}
-{% include 'entries/entry-feature-card.html' %}
-{% endif %}
+  {% if forloop.first %}
+    {% include 'entries/entry-feature-card.html' %}
+  {% endif %}
 {% endfor %}
 
 <div class="container">
   <div class="columns is-multiline is-centered">
     {% for entry in entries %}
-    {% if not forloop.first %}
-    {% include 'entries/entry-card.html' %}
-    {% endif %}
+      {% if not forloop.first %}
+        {% include 'entries/entry-card.html' %}
+      {% endif %}
     {% endfor %}
   </div>
 </div>

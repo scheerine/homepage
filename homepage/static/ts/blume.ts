@@ -3,7 +3,6 @@ declare var ParallaxHook: any
 
 document.addEventListener('DOMContentLoaded', async () => {
     const container = document.getElementById('blume-section')
-    const bg = document.getElementById('blume-background')
     const treppe = document.getElementById('blume-treppe')
     const blume = document.getElementById('blume')
     new ParallaxHook(

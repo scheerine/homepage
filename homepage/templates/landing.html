@@ -1,14 +1,5 @@
 {% extends 'base.html' %}
 
-{% load static %}
-
-{% block extrahead %}
-<link rel="preload"
-      href="{% static 'css/landing.min.css' %}"
-      as="style">
-<link href="{% static 'css/landing.min.css' %}" rel="stylesheet">
-{% endblock %}
-
 {% block main %}
 
 {% include 'ink.html' %}

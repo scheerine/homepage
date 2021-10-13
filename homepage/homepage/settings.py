@@ -108,7 +108,7 @@ DATABASES = {
 
 HUEY = {
     'huey_class': 'huey.RedisHuey',  # Huey implementation to use.
-    'name': DATABASES['default']['NAME'],  # Use db name for huey.
+    'name': str(DATABASES['default']['NAME']),  # Use db name for huey.
     'results': True,  # Store return values of tasks.
     'store_none': False,  # If a task returns None, do not save to results.
     'immediate': DEBUG,  # If DEBUG=True, run synchronously.

@@ -39,10 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'huey.contrib.djhuey',
-
     'entries',
     'gitload',
+
+    'huey.contrib.djhuey',
+    'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [

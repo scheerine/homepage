@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         (progress: any) => {
             anime({
                 targets: container,
-                opacity: Math.min(1, progress.value * 3),
+                opacity: Math.min(1, progress.value * 10),
                 translateY: 10 - (progress.value * 20),
                 duration: 200,
             })

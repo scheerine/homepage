@@ -7,5 +7,5 @@ class LandingView(TemplateView):
         # Call the base implementation first to get a context
         context = super().get_context_data(**kwargs)
         # Whether we should display the new project
-        context['show_reveal'] = False
+        context['show_reveal'] = True
         return context

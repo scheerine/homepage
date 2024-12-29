@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "header_greeting"
+msgstr "Hi! Ich bin Victoria Scheer."
+
+msgid "header_greeting_subtitle"
+msgstr "Ich lebe in Dresden und arbeite in der Umweltanalytik, aber meine wahre Leidenschaft sind Bücher. Dabei dreht sich alles um Fantasy - ganz egal ob lesen oder schreiben. Hier stelle ich dir einige meiner Schreibprojekte vor, aber du kannst mir auch gerne auf Instagram für mehr Schreib- und Lesecontent folgen!"
+
+msgid "nav-fragment-me"
+msgstr "ueber-mich"
+
+msgid "nav-text-me"
+msgstr "Über Mich"
+
+msgid "nav-fragment-projects"
+msgstr "meine-schreibprojekte"
+
+msgid "nav-text-projects"
+msgstr "Schreibprojekte"
+
+msgid "nav-fragment-mnl"
+msgstr "millionen-neuer-luegen"
+
+msgid "nav-text-mnl"
+msgstr "Millionen Neuer Lügen"
+
+msgid "reveal-title"
+msgstr "Two to find a Prince"
+
+msgid "reveal-subtitle"
+msgstr "SCHATTEN UND KLINGE DILOGIE"
+
+msgid "reveal-text"
+msgstr "Ein Haus fast unbewacht.<br>Ein weggeschlossenes Geheimnis.<br>Ein einzelnes Fenster, achtlos offen gelassen.<br>Ein Mädchen mit einer Magie, die einzigartig ist.<br><br>Sie ist ein Schatten in der Nacht, der sich ungesehen durch die Welt bewegt. Sie ist ein Niemand – eine Außenseiterin mit einer Vergangenheit, die sie lieber vergessen würde. Sie spricht mit wenigen und lebt von Tag zu Tag. Bis eines Tages jemand Neues in ihr Leben tritt.<br><br>Er ist ein Soldat. Ein Ausländer mit einer Vergangenheit, die er nicht ignorieren kann. Er wird für das Richtige kämpfen, selbst wenn es ein Leben kostet.<br><br>Zusammen wären sie nicht aufzuhalten. Aber wird sie die Kraft finden, einem anderen zu vertrauen?"
+
+msgid "book-header"
+msgstr "Meine Schreibprojekte"
+
+msgid "book-header-subtitle"
+msgstr "Ich schreibe inzwischen schon einige Jahre und Ideen gibt es viele. Von der Urban-Fantasy Geschichte, wenn man gerade die eine inspirierende Serie gesehen hat, über interessante Schnapsideen in anderen Genres bis hin zum High-Fantasy-Epos mit eigens erdachter Welt und Magie existiert alles in meinem Kopf. Einige verfolgt man eine Weile und verwirft sie dann wieder, andere entwickeln sich und wieder andere hebt man sich für später auf. Aktuell arbeite ich an zwei Projekten, die ich hier kurz vorstellen möchte. Eins davon ist bereit veröffentlicht zu werden, das andere erstmal nur eine Idee in meinem Kopf."
+
+msgid "book-1-title"
+msgstr "Projekt \"SuK\""
+
+msgid "book-1-tropes"
+msgstr "Tropes: dunkle Vergangenheit, found family, Fae, Politik, only one bed, Schattenmagie, Bluts-/Opfermagie"
+
+msgid "book-1-subtext1"
+msgstr "Diese Geschichte wird aus 2 Büchern bestehen."
+
+msgid "book-1-subtext2"
+msgstr "Die Hauptfigur – der Schatten – ist die heimliche Vertraute der Königin von Timur. Sie kennt jedes Geheimnis und ist eine Meisterin im Stehlen von Informationen. Sie erledigt alle möglichen Arbeiten für die Königin, arbeitet aber alleine, bis sich die Dinge plötzlich ändern."
+
+msgid "book-1-subtext3"
+msgstr "Diese Geschichte hat ein eher düsteres Setting. Die Protagonistin hat eine dunkle Vergangenheit, die sie zwar zu der jungen Frau gemacht hat, die sie heute ist, über die sie jedoch niemals spricht. Sie ist verschlossen und hat Probleme zu vertrauen, was ihr die Arbeit erleichtert, sie aber im Laufe der Geschichte vor diverse Hindernisse bringen wird."
+
+msgid "book-2-title"
+msgstr "Unbenanntes Projekt"
+
+msgid "book-2-tropes"
+msgstr "Tropes: Element-Magie, enemies to lovers"
+
+msgid "book-2-subtext1"
+msgstr "Diese Geschichte steht noch am Anfang und ist aktuell kaum mehr als eine kleine Ideensammlung."
+
+msgid "book-2-subtext2"
+msgstr "Ich weiß noch nicht, wie viele Bücher diese Geschichte umfassen wird, aber ich kann mit Sicherheit sagen, dass es kein Einzelband werden wird. Ich habe natürlich auch noch nicht alle Details ausgearbeitet und die, die ich bereits habe, kann ich nicht verraten. Aber was ich bereits weiß, ist folgendes: Die Geschichte wird auf einer Prophezeiung basieren und es wird mindestens zwei Länder geben, die sich im Krieg befinden - mindestens eins davon mit religiösem Hintergrund."
+
+msgid "book-2-subtext3"
+msgstr "“Stell dir vor, du hättest ein Geheimnis. Stell dir vor, wenn dieses Geheimnis je ans Licht käme, würdest du auf der Stelle getötet werden. Und nun stell dir vor, die Zeremonie, die dieses Geheimnis unweigerlich ans Licht bringen wird, ist nur noch wenige Stunden entfernt. Genau das ist meine Situation.”"
+
+msgid "projects-insta-ref"
+msgstr "Bis diese Projekte fertig sind, kannst du gerne mal auf meinem Bookstagram-Account <a rel=\"noreferrer\" target=\"_blank\" class=\"typewriter\" href=\"https://www.instagram.com/headbetweenthepages/\">@headbetweenthepages</a> vorbeischauen, wo ich meine Fortschritte zu jedem Projekt teile und auch wöchentlich meine Meinung zu Büchern teile, die ich gelesen habe."
+
+msgid "blume-title"
+msgstr "Millionen Neuer Lügen"
+
+msgid "blume-subtitle"
+msgstr "“Hör mir nun gut zu.” Lady Winter sprach ruhig aber bestimmt. “Deine Mutter war wie ich, kleine Eve. Leider ist sie zu früh gestorben, um dir alles selbst erklären zu können. Sie hat mir ein Geheimnis anvertraut, welches ich nun an dich weiterreiche.” Was würdest du tun, wenn von einem Tag auf den anderen deine Welt auf den Kopf gestellt wird? Was, wenn du eine ganze Welt aufgeben müsstest, nur um denjenigen zu retten, der dir am meisten bedeutet? Was, wenn hinter jedem Satz eine Lüge steckt? Und was, wenn alles was du geglaubt hast zu kennen, ein Geheimnis birgt? Eve Cort ist ein junges Mädchen im frühen siebzehnten Jahrhundert, nur fasziniert von der Musik. Doch eines Tages ändert sich ihr ganzes Leben. Geheimnisse kommen ans Licht und bedrohen jene, die Eve am nächsten stehen. Bei dem Versuch diese zu retten, wird sie in eine Welt gerissen, in der Magie kein Fremdwort ist."
+
+msgid "blume-ref"
+msgstr "Dieses Buch ist das erste Buch, was ich je im Selfpublishing veröffentlicht habe. Es ist nichts besonderes und ich weiß, es ist nicht perfekt, aber ich habe dennoch entschieden, es weiterhin erhältlich zu lassen, zumindest als E-Book. Es enthält Fehler, aber ich glaube, dass es wichtig ist, sich daran zu erinnern, wo man angefangen hat und wie weit man gekommen ist. Wenn ihr diese Geschichte lesen möchtest, findet ihr sie auf <a rel=\"noreferrer\" target=\"_blank\" class=\"typewriter\" href=\"https://www.thalia.de/shop/home/artikeldetails/ID150293688.html\">Thalia</a> und <a rel=\"noreferrer\" target=\"_blank\" class=\"typewriter\" href=\"https://www.hugendubel.de/de/ebook_epub/victoria_scheer-match_of_survival_koenigin_der_hoffnung-39904752-produkt-details.html?searchId=1516792578\">Hugendubel</a>."
+
+msgid "footer-ref"
+msgstr "Design und Realisation von <a rel=\"noreferrer\" href=\"https://philippmatth.es\" target=\"_blank\">Philipp Matthes</a>."

@@ -1,0 +1,21 @@
+{% load static %}
+{% load i18n %}
+
+<section id="reveal" class="container" style="padding-top: 12rem; padding-bottom: 12rem;">
+    <div class="columns is-centered">
+        <div class="column is-5">
+            <img src="{% static 'img/reveal.webp' %}">
+        </div>
+        <div class="column is-5 pt-6">
+            <p class="calligraphy projecttitle pb-2 has-text-centered">
+                {% trans 'reveal-title' %}
+            </p>
+            <p class="calligraphy subtitle pb-2 has-text-centered">
+                {% trans 'reveal-subtitle' %}
+            </p>
+            <p class="typewriter subtitle pb-2 has-text-centered">
+                {% trans 'reveal-text' %}
+            </p>
+        </div>
+    </div>
+</section>

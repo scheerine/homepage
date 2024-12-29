@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "header_greeting"
+msgstr "Hi! I'm Victoria Scheer."
+
+msgid "header_greeting_subtitle"
+msgstr "I live in Dresden, Germany and work in the field of environment analytics but books are my true passion. And it’s always fantasy, never mind if I’m reading or writing. Here I’ll introduce you to some of my writing projects. You can also follow me on Instagram for more reading and writing content!"
+
+msgid "nav-fragment-me"
+msgstr "ueber-mich"
+
+msgid "nav-text-me"
+msgstr "About Me"
+
+msgid "nav-fragment-projects"
+msgstr "meine-schreibprojekte"
+
+msgid "nav-text-projects"
+msgstr "Writing Projects"
+
+msgid "nav-fragment-mnl"
+msgstr "millionen-neuer-luegen"
+
+msgid "nav-text-mnl"
+msgstr "Millionen Neuer Lügen"
+
+msgid "reveal-title"
+msgstr "Two to find a Prince"
+
+msgid "reveal-subtitle"
+msgstr "SHADOW AND BLADE DUOLOGY"
+
+msgid "reveal-text"
+msgstr "A secret locked away.<br>A house poorly guarded.<br>A window carelessly left open.<br>A girl with a magic unique to her kind.<br><br>She is a shadow in the night, moving through the world unseen. She is a nobody - an outsider with a past she would rather forget. She talks to few and lives from day to day. Until one day someone new enters her life.<br><br>He is a soldier. A foreigner with a past he cannot ignore. He will fight for what is right even if it costs a life.<br><br>Together they would be unstoppable. But will she find the strength to trust another?"
+
+msgid "book-header"
+msgstr "My Writing Projects"
+
+msgid "book-header-subtitle"
+msgstr "I’ve been writing for a few years now and I have lots of ideas. From urban fantasy stories, when you’ve just seen an inspiring series, to interesting crazy ideas in other genres, to high fantasy epics with a specially created world and magic - everything exists in my head. Some you pursue for a while and then discard, others develop and others you save for later. I’m currently working on two projects that I’d like to briefly introduce here. One of them is ready to be published, the other is just an idea in my head for now."
+
+msgid "book-1-title"
+msgstr "Project \"SaB\""
+
+msgid "book-1-tropes"
+msgstr "Tropes: dark past, found family, Fae, politics, only one bed, shadow magic, sacrificial blood magic"
+
+msgid "book-1-subtext1"
+msgstr "This story will consist of 2 books."
+
+msgid "book-1-subtext2"
+msgstr "The main character - the Shadow - is the secret confidant of the Queen of Timur. She knows every secret and is a master at stealing information. She does all kinds of work for the Queen, but works alone until things suddenly change."
+
+msgid "book-1-subtext3"
+msgstr "This story has a rather dark setting. The protagonist has a dark past that has made her the young woman she is today, but which she never talks about. She is withdrawn and has trouble trusting, which makes her work easier, but will bring her into various obstacles throughout the story."
+
+msgid "book-2-title"
+msgstr "Untitled project"
+
+msgid "book-2-tropes"
+msgstr "Tropes: elemental magic, enemies to lovers"
+
+msgid "book-2-subtext1"
+msgstr "This story is still at the beginning and right now no more than a collection of ideas."
+
+msgid "book-2-subtext2"
+msgstr "I don’t know yet how many books this story will encompass but I do know for certain that it won’t be a standalone. I haven’t worked out all the details yet and those I do know I can’t tell. But what I do know is this: The story will be based on a prophecy and there will be at least two warring countries at play, at least one of them with religious intent."
+
+msgid "book-2-subtext3"
+msgstr "“Imagine you had a secret. Imagine if that secret ever came to light you would be killed on sight. Now imagine the ceremony that will inevitably reveal that secret is just hours away. That’s where I’m now.”"
+
+msgid "projects-insta-ref"
+msgstr "Until these projects are ready you can check out my bookstagram account <a rel=\"noreferrer\" target=\"_blank\" class=\"typewriter\" href=\"https://www.instagram.com/headbetweenthepages/\">@headbetweenthepages</a> where I share updates for my writing projects and my opinion on books more or less weekly."
+
+msgid "blume-title"
+msgstr "Millionen Neuer Lügen"
+
+msgid "blume-subtitle"
+msgstr "What would you do if your world were turned upside down from one day to another? What if you had to give up your whole world just to save the one person that means the most to you? What if every sentence is a lie? And what if everything you thought you believed contains a secret? Eve Cort is a young girl in the early sevententh century only fascinated by music. But one day her whole life changes. Secrets come to light and threaten those Eve loves most. Trying to save them Eve is drawn into a world where magic isn't just a story."
+
+msgid "blume-ref"
+msgstr "This is the first book I ever published. I published it via selfpublishing. It's not much and I know it's not perfect but I still decided to keep it available at least as an e-book. It has mistakes but I believe it's important to remember where I came from and how far I got. That said, this book is only available in German. Sorry to all my international readers!"
+
+msgid "footer-ref"
+msgstr "Design and realisation by <a rel=\"noreferrer\" href=\"https://philippmatth.es\" target=\"_blank\">Philipp Matthes</a>."

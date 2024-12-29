@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 {% block extrahead %}
 <link rel="preload"
@@ -7,105 +8,103 @@
 <link href="{% static 'css/book.min.css' %}" rel="stylesheet">
 {% endblock %}
 
-<div class="bg-paperwhite" id="match-of-survival">
-<section id="book-app" class="container" data-current-media="book">
-    <div class="hero has-text-centered px-6">
-        <h1 class="title calligraphy pb-6 is-size-1-tablet"> Meine Schreibprojekte </h1>
+<section id="book-app" class="container" data-current-media="book" {% if not show_reveal %}style="padding-top: 12rem;"{% endif %}>
+    <div id="{% trans 'nav-fragment-projects' %}" class="hero has-text-centered px-6">
+        <h1 class="title calligraphy pb-6 is-size-1-tablet">{% trans 'book-header' %}</h1>
         <p class="typewriter subtitle pb-4 has-text-centered">
-            Ich schreibe inzwischen schon einige Jahre und Ideen gibt es viele. Von der Urban-Fantasy Geschichte, wenn man gerade die eine inspirierende Serie gesehen hat, über interessante Schnapsideen in anderen Genres bis hin zum High-Fantasy-Epos mit eigens erdachter Welt und Magie existiert alles in meinem Kopf. Einige verfolgt man eine Weile und verwirft sie dann wieder, andere entwickeln sich und wieder andere hebt man sich für später auf. Aktuell arbeite ich an zwei Schreibprojekten, die ich hier kurz vorstellen möchte. Sie spielen im selben Universum, sind aber unabhängig voneinander.
+            {% trans 'book-header-subtitle' %}
         </p>
     </div>
 
-    <div class="pb-4 px-6 is-hidden-mobile">
+    <div class="pb-4 px-6 is-hidden-until-widescreen">
         <div class="columns is-centered">
-            
             <div class="column is-5">
-                <img style="border-radius: 1rem;" src="{% static 'img/arrow_1.webp' %}">
+                <img src="{% static 'img/arrow_1.webp' %}">
             </div>
             <div class="column is-5">
-                <img style="border-radius: 1rem;" src="{% static 'img/arrow_2.webp' %}">
+                <img src="{% static 'img/arrow_2.webp' %}">
             </div>
         </div>
     </div>
 
-    <div class="pb-6 px-6 is-hidden-mobile">
+    <div class="pb-6 px-6 is-hidden-until-widescreen">
         <div class="columns is-centered">
             <div class="column is-5">
                 <p class="calligraphy projecttitle pb-2 has-text-centered">
-                    Projekt "LuS"
+                    {% trans 'book-1-title' %}
                 </p>
                 <p class="typewriter tropes pb-4 has-text-centered">
-                    Tropes: Magie, Geheimnisse, reluctant Hero
-                <p/>
+                    {% trans 'book-1-tropes' %}
+                </p>
                 <p class="typewriter subtitle pb-2 has-text-centered">
-                    „Niemand weiß, wer ich wirklich bin. Auch ich nicht."
-                <p/>
+                    {% trans 'book-1-subtext1' %}
+                </p>
                 <p class="typewriter subtitle pb-1 has-text-centered">
-                    Loriana lebt ihr Leben als Außenseiterin, die seltsame Gefängniswärterin, die mit niemandem redet. Sie glaubt an Marwans Regeln und würde sie niemals brechen, bis eines Tages die Leben ihrer Schwester und einzigen Freundin davon abhängen. Ihre ganze Welt wird auf den Kopf gestellt, als sie plötzlich erfährt, dass Magie mehr als nur eine von Marwans Schauergeschichten ist und Marwan anfängt, sie zu jagen.
-                <p/>
+                    {% trans 'book-1-subtext2' %}
+                </p>
                 <p class="typewriter subtitle pb-6 has-text-centered">
-                    In dieser Geschichte geht es um eine junge Frau, deren Leben völlig aus den Fugen gerät, als sie herausfindet, dass sie ihr gesamtes Leben lang belogen wurde. Sie muss ihr Weltbild komplett überdenken und lernen, mit der Wahrheit zu leben.
-                <p/>
+                    {% trans 'book-1-subtext3' %}
+                </p>    
             </div>
             <div class="column is-1">
             </div>
             <div class="column is-5">
                 <p class="calligraphy projecttitle pb-2 has-text-centered">
-                    Projekt "SuK"
+                    {% trans 'book-2-title' %}
                 </p>
                 <p class="typewriter tropes pb-4 has-text-centered">
-                    Tropes: dunkle Vergangenheit, found family, Magie, Fae, Politik
-                <p/>
+                    {% trans 'book-2-tropes' %}
+                </p>
                 <p class="typewriter subtitle pb-3 has-text-centered">
-                    Diese Geschichte steht noch am Anfang und wurde gerade erst begonnen.
-                <p/>
+                    {% trans 'book-2-subtext1' %}
+                </p>
                 <p class="typewriter subtitle pb-1 has-text-centered">
-                    Die Hauptfigur – der Schatten – ist die heimliche Vertraute der Königin von Timur. Sie kennt jedes Geheimnis und ist eine Meisterin im Stehlen von Informationen. Sie erledigt alle möglichen Arbeiten für die Königin, arbeitet aber alleine, bis sich die Dinge plötzlich ändern.
-                <p/>
+                    {% trans 'book-2-subtext2' %}
+                </p>
                 <p class="typewriter subtitle pb-6 has-text-centered">
-                    Diese Geschichte ist viel düsterer als Projekt LuS – wortwörtlich und im übertragenen Sinne. Die Protagonistin hat eine dunkle Vergangenheit, die sie zwar zu der jungen Frau gemacht hat, die sie heute ist, über die sie jedoch niemals spricht. Sie ist verschlossen und hat Probleme zu vertrauen, was ihr die Arbeit erleichtert, sie aber im Laufe der Geschichte vor diverse Hindernisse bringen wird.
-                <p/>
+                    {% trans 'book-2-subtext3' %}
+                </p>
             </div>
         </div>
     </div>
 
     <div class="hero has-text-centered px-6 is-hidden-from-widescreen">
-        <div class="column is-5">
-            <img style="border-radius: 1rem;" src="{% static 'img/arrow_1.webp' %}">
+        <div class="is-centered">
+            <img style="display: inline-block" src="{% static 'img/arrow_1.webp' %}">
         </div>
         <p class="calligraphy projecttitle pb-2 has-text-centered">
-            Projekt "LuS"
+            {% trans 'book-1-title' %}
         </p>
         <p class="typewriter tropes pb-4 has-text-centered">
-            Tropes: Magie, Geheimnisse, reluctant Hero
-        <p/>
+            {% trans 'book-1-tropes' %}
+        </p>
         <p class="typewriter subtitle pb-2 has-text-centered">
-            „Niemand weiß, wer ich wirklich bin. Auch ich nicht."
-        <p/>
+            {% trans 'book-1-subtext1' %}
+        </p>
         <p class="typewriter subtitle pb-2 has-text-centered">
-            Loriana lebt ihr Leben als Außenseiterin, die seltsame Gefängniswärterin, die mit niemandem redet. Sie glaubt an Marwans Regeln und würde sie niemals brechen, bis eines Tages die Leben ihrer Schwester und einzigen Freundin davon abhängen. Ihre ganze Welt wird auf den Kopf gestellt, als sie plötzlich erfährt, dass Magie mehr als nur eine von Marwans Schauergeschichten ist und Marwan anfängt, sie zu jagen.
-        <p/>
+            {% trans 'book-1-subtext2' %}
+        </p>
         <p class="typewriter subtitle pb-6 has-text-centered">
-            In dieser Geschichte geht es um eine junge Frau, deren Leben völlig aus den Fugen gerät, als sie herausfindet, dass sie ihr gesamtes Leben lang belogen wurde. Sie muss ihr Weltbild komplett überdenken und lernen, mit der Wahrheit zu leben.
-        <p/>
-        <div class="column is-5">
-            <img style="border-radius: 1rem;" src="{% static 'img/arrow_2.webp' %}">
+            {% trans 'book-1-subtext3' %}
+        </p>
+        <div class="is-centered">
+            <img src="{% static 'img/arrow_2.webp' %}">
         </div>
         <p class="calligraphy projecttitle pb-2 has-text-centered">
-            Projekt "SuK"
+            {% trans 'book-2-title' %}
         </p>
         <p class="typewriter tropes pb-4 has-text-centered">
-            Tropes: dunkle Vergangenheit, found family, Magie, Fae, Politik
-        <p/>
+            {% trans 'book-2-tropes' %}
+        </p>
         <p class="typewriter subtitle pb-3 has-text-centered">
-            Diese Geschichte steht noch am Anfang und wurde gerade erst begonnen.
-        <p/>
+            {% trans 'book-2-subtext1' %}
+        </p>
         <p class="typewriter subtitle has-text-centered">
-            Die Hauptfigur – der Schatten – ist die heimliche Vertraute der Königin von Timur. Sie kennt jedes Geheimnis und ist eine Meisterin im Stehlen von Informationen. Sie erledigt alle möglichen Arbeiten für die Königin, arbeitet aber alleine, bis sich die Dinge plötzlich ändern.
-        <p/>
+            {% trans 'book-2-subtext2' %}
+        </p>
         <p class="typewriter subtitle pb-6 has-text-centered">
-            Diese Geschichte ist viel düsterer als Projekt LuS – wortwörtlich und im übertragenen Sinne. Die Protagonistin hat eine dunkle Vergangenheit, die sie zwar zu der jungen Frau gemacht hat, die sie heute ist, über die sie jedoch niemals spricht. Sie ist verschlossen und hat Probleme zu vertrauen, was ihr die Arbeit erleichtert, sie aber im Laufe der Geschichte vor diverse Hindernisse bringen wird.
-        <p/>
+            {% trans 'book-2-subtext3' %}
+        </p>
     </div>
 
     {% comment %}
@@ -125,7 +124,7 @@
     {% endcomment%}
 
     <div class="hero has-text-centered px-6">
-        <p class="title typewriter pt-63" style= "font-weight: 300">Bis diese Projekte fertig sind, kannst du gerne mal auf meinem Bookstagram-Account <a rel="noreferrer" target="_blank" class="typewriter" href="https://www.instagram.com/headbetweenthepages/">@headbetweenthepages</a> vorbeischauen, wo ich meine Fortschritte zu jedem Projekt teile und auch wöchentlich meine Meinung zu Büchern teile, die ich gelesen habe.</p>
+        <p class="title typewriter pt-63" style= "font-weight: 300">{% trans 'projects-insta-ref' %}</p>
     </div>
 
     {% comment %}
@@ -163,8 +162,6 @@
     </article>
     {% endcomment%}
 </section>
-</div>
-
 
 {% block extrabody %}
 <link rel="prefetch" href="{% static 'js/book.min.js' %}">

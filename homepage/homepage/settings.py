@@ -39,9 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'entries',
-    'gitload',
-
     'huey.contrib.djhuey',
     'whitenoise.runserver_nostatic',
 ]
@@ -78,7 +75,6 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
             'libraries': {
-                'markdown': 'entries.templatetags.markdown',
                 'highlight': 'homepage.templatetags.highlight',
             },
         },
@@ -167,6 +163,7 @@ LANGUAGE_CODE = 'de'
 
 LANGUAGES = [
     ('de', 'German'),
+    ('en', 'English'),
 ]
 
 LOCALE_PATHS = [

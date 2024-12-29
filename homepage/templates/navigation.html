@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 {% block extrahead %}
 <link rel="preload"
@@ -30,20 +31,16 @@
       </div>
 
       <div class="navbar-end">
-        <a class="navbar-item is-size-4" href="/#ueber-mich">
-          <strong>Über Mich</strong>
+        <a class="navbar-item is-size-4" href="/#{% trans 'nav-fragment-me' %}">
+          <strong>{% trans 'nav-text-me' %}</strong>
         </a>
 
-        <a class="navbar-item is-size-4" href="/#match-of-survival">
-          <strong>Match of Survival</strong>
+        <a class="navbar-item is-size-4" href="/#{% trans 'nav-fragment-projects' %}">
+          <strong>{% trans 'nav-text-projects' %}</strong>
         </a>
 
-        <a class="navbar-item is-size-4" href="/#millionen-neuer-luegen">
-          <strong>Millionen Neuer Lügen</strong>
-        </a>
-
-        <a class="navbar-item is-size-4" href="/#blog-und-stories">
-          <strong>Blog & Stories</strong>
+        <a class="navbar-item is-size-4" href="/#{% trans 'nav-fragment-mnl' %}">
+          <strong>{% trans 'nav-text-mnl' %}</strong>
         </a>
       </div>
     </div>

@@ -1,6 +1,5 @@
 {% load static %}
-
-<hr>
+{% load i18n %}
 
 <section id="footer" class="px-6 pt-6 p-6">
   <div class="container">
@@ -9,11 +8,11 @@
         <p>Victoria Scheer</p>
         <p>Clara-Viebig-Straße 9</p>
         <p>01159 Dresden</p>
-        <p>0157 78304086</p>
-        <p>kontakt@victoria-scheer.de</p>
+        <p><img src="{% static 'img/tel.webp' %}" style="height: 10px"></p>
+        <p>mail@victoria-scheer.de</p>
         <p>Instagram: <a rel="noreferrer" href="https://www.instagram.com/headbetweenthepages/" target="_blank">@headbetweenthepages</a></p>
         <p class="pt-3">
-          <small>Design und Realisation von <a rel="noreferrer" href="https://philippmatth.es" target="_blank">Philipp Matthes</a></small>
+          <small>{% trans 'footer-ref' %}</small>
         </p>
       </div>
     </div>

@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 {% block extrahead %}
 <link rel="preload"
@@ -7,7 +8,7 @@
 <link href="{% static 'css/blume.min.css' %}" rel="stylesheet">
 {% endblock %}
 
-<div id="millionen-neuer-luegen"></div>
+<div id="{% trans 'nav-fragment-mnl' %}"></div>
 <section id="blume-section">
   <div id="blume-background"
        style="background-image: url({% static 'img/blume-background.webp' %});">
@@ -22,12 +23,12 @@
     <div class="column is-6">
       <div class="hero has-text-centered">
         <h1 class="title calligraphy pt-6 px-6 has-text-white">
-          Millionen Neuer Lügen
+          {% trans 'blume-title' %}
         </h1>
         <h5 class="subtitle typewriter pt-2 px-6 has-text-white">
-          “Hör mir nun gut zu.” Lady Winter sprach ruhig aber bestimmt. “Deine Mutter war wie ich, kleine Eve. Leider ist sie zu früh gestorben, um dir alles selbst erklären zu können. Sie hat mir ein Geheimnis anvertraut, welches ich nun an dich weiterreiche.”Was würdest du tun, wenn von einem Tag auf den anderen deine Welt auf den Kopf gestellt wird? Was, wenn du eine ganze Welt aufgeben müsstest, nur um denjenigen zu retten, der dir am meisten bedeutet? Was, wenn hinter jedem Satz eine Lüge steckt? Und was, wenn alles was du geglaubt hast zu kennen, ein Geheimnis birgt? Eve Cort ist ein junges Mädchen im frühen siebzehnten Jahrhundert, nur fasziniert von der Musik. Doch eines Tages ändert sich ihr ganzes Leben. Geheimnisse kommen ans Licht und bedrohen jene, die Eve am nächsten stehen. Bei dem Versuch diese zu retten, wird sie in eine Welt gerissen, in der Magie kein Fremdwort ist.
+          {% trans 'blume-subtitle' %}
         </h5>
-        <p class="title typewriter has-text-white pt-6 px-6">Jetzt verfügbar auf <a rel="noreferrer" target="_blank" class="typewriter" href="https://www.thalia.de/shop/home/artikeldetails/ID150293688.html">Thalia</a>, <a rel="noreferrer" target="_blank" class="typewriter" href="https://www.hugendubel.de/de/ebook_epub/victoria_scheer-match_of_survival_koenigin_der_hoffnung-39904752-produkt-details.html?searchId=1516792578">Hugendubel</a> und <a rel="noreferrer" target="_blank" class="typewriter" href="https://www.weltbild.de/artikel/ebook/millionen-neuer-luegen_26020629-1">Weltbild</a></p>
+        <p class="title typewriter has-text-white pt-6 px-6">{% trans 'blume-ref' %}</p>
       </div>
     </div>
   </div>

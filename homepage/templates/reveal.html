@@ -4,7 +4,12 @@
 <section id="reveal" class="container" style="padding-top: 12rem; padding-bottom: 12rem;">
     <div class="columns is-centered">
         <div class="column is-5">
-            <img src="{% static 'img/reveal.webp' %}">
+            {% comment %}Show EN or DE version depending on the browser locale{% endcomment %}
+            {% if request.LANGUAGE_CODE == 'en' %}
+                <img src="{% static 'img/mockup-en.webp' %}">
+            {% else %}
+                <img src="{% static 'img/mockup-de.webp' %}">
+            {% endif %}
         </div>
         <div class="column is-5 pt-6">
             <p class="typewriter subtitle pb-2 has-text-centered">

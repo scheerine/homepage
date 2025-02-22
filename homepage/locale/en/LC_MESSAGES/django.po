@@ -30,7 +30,7 @@ msgid "nav-text-mnl"
 msgstr "Millionen Neuer Lügen"
 
 msgid "reveal-date"
-msgstr "Coming spring 2025"
+msgstr "Coming April 24th 2025"
 
 msgid "reveal-title"
 msgstr "Two to find a Prince"
